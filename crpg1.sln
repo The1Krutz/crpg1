@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PloverCore", "PloverCore\PloverCore.csproj", "{CB9B543A-F84E-443E-B3C1-97D705808E3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plover", "plover\Plover.csproj", "{A69D69BC-FF8B-4BE8-BFD1-6B849808246F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PloverGodot", "PloverGodot\PloverGodot.csproj", "{A69D69BC-FF8B-4BE8-BFD1-6B849808246F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
