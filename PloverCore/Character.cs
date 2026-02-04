@@ -1,4 +1,5 @@
-﻿namespace PloverCore;
+﻿
+namespace PloverCore;
 
 public class Character
 {
@@ -8,8 +9,24 @@ public class Character
 
   public Character(string name, int maxHp)
   {
-    this.Name = name;
-    this.MaxHp = maxHp;
-    this.CurrentHP = maxHp;
+    Name = name;
+    MaxHp = maxHp;
+    CurrentHP = maxHp;
+  }
+
+  public void TakeDamage(int amount)
+  {
+    CurrentHP -= amount;
+
+    if (CurrentHP <= 0)
+    {
+      CurrentHP = 0;
+      TriggerDeath();
+    }
+  }
+
+  private void TriggerDeath()
+  {
+    Console.WriteLine($"Character {Name} has died!");
   }
 }
