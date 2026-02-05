@@ -3,9 +3,15 @@ namespace PloverCore;
 
 public class Character
 {
-  string Name = "Placeholder";
-  int MaxHp = 0;
-  int CurrentHP = 0;
+  public string Name = "Placeholder";
+
+  public List<Trait> Traits = [
+    AllTraits.Humanoid
+  ];
+
+
+  public int MaxHp = 0;
+  public int CurrentHP = 0;
 
   public Character(string name, int maxHp)
   {
