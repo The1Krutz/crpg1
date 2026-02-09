@@ -6,18 +6,19 @@ public class Character
   public string Name = "Placeholder";
 
   public List<Trait> Traits = [
-    AllTraits.Humanoid
   ];
-
 
   public int MaxHp = 0;
   public int CurrentHP = 0;
 
-  public Character(string name, int maxHp)
+  // Default constructor
+  public Character(string name, int maxHp, List<Trait> traits)
   {
     Name = name;
     MaxHp = maxHp;
     CurrentHP = maxHp;
+
+    Traits = [.. traits];
   }
 
   public void TakeDamage(int amount)
