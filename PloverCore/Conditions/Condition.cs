@@ -1,9 +1,11 @@
 namespace PloverCore.Conditions;
 
-public struct Condition
+public interface ICondition
 {
-  public int Id;
-  public string Name;
-  public string Description;
+  public void onBeforeAttackIn();
+  public void onAfterAttackIn();
+  public void onBeforeAttackOut();
+  public void onAfterAttackOut();
 
+  public string getDescription();
 }
