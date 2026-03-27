@@ -1,5 +1,4 @@
-
-namespace PloverCore;
+namespace PloverCore.Conditions;
 
 public struct Condition
 {

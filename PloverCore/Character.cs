@@ -1,4 +1,5 @@
-﻿
+﻿using PloverCore.Traits;
+
 namespace PloverCore;
 
 public class Character
