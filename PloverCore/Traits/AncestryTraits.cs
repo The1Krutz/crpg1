@@ -1,3 +1,5 @@
+using PloverCore.Traits;
+
 namespace PloverCore;
 
 public static partial class AllTraits
