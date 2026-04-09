@@ -1,4 +1,5 @@
 ﻿using PloverCore.Enums;
+using PloverCore.Types;
 
 namespace PloverCore;
 
@@ -6,13 +7,13 @@ public class Character
 {
   public string Name = "Placeholder";
 
-  public Dictionary<Enums.Attribute, int> Attributes = new(){
-    {Enums.Attribute.Strength, 10},
-    {Enums.Attribute.Dexteriry, 10},
-    {Enums.Attribute.Constitution, 10},
-    {Enums.Attribute.Intelligence, 10},
-    {Enums.Attribute.Wisdom, 10},
-    {Enums.Attribute.Charisma, 10},
+  public Dictionary<Types.Attribute, int> Attributes = new(){
+    {Types.Attribute.Strength, 10},
+    {Types.Attribute.Dexteriry, 10},
+    {Types.Attribute.Constitution, 10},
+    {Types.Attribute.Intelligence, 10},
+    {Types.Attribute.Wisdom, 10},
+    {Types.Attribute.Charisma, 10},
   };
 
   public List<Trait> Traits = [

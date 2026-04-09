@@ -1,9 +1,19 @@
-namespace PloverCore.Enums;
+﻿namespace PloverCore.Types;
 
-public struct Modifier
+public enum TraitCategory
 {
-  public ModifierType Type;
-  public int Amount;
+  Ancestry = 0,
+  Energy = 1
+}
+
+public enum Attribute
+{
+  Strength = 0,
+  Dexteriry = 1,
+  Constitution = 2,
+  Intelligence = 3,
+  Wisdom = 4,
+  Charisma = 5,
 }
 
 public enum ModifierType
