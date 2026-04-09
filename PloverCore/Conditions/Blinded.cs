@@ -9,11 +9,9 @@ public class Blinded : ICondition
     ///
     /// This is a really dumb way to do this, and you need to do better
     ///
-    return;
-  }
+      }
   void ICondition.onAfterAttackOut()
   {
-    return;
   }
   void ICondition.onBeforeAttackIn()
   {

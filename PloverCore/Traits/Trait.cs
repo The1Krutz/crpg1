@@ -10,6 +10,6 @@ public struct Trait
 
 public enum TraitCategory
 {
-  Ancestry,
-  Energy
+  Ancestry = 0,
+  Energy = 1
 }

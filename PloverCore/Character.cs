@@ -13,7 +13,12 @@ public class Character
   public int MaxHp;
   public int CurrentHP;
 
-  // Default constructor
+  /// <summary>
+  /// Default constructor
+  /// </summary>
+  /// <param name="name"></param>
+  /// <param name="maxHp"></param>
+  /// <param name="traits"></param>
   public Character(string name, int maxHp, List<Trait> traits)
   {
     Name = name;
