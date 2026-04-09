@@ -38,13 +38,11 @@ public class Monster
     }
   ];
 
-  public Monster(string name, int maxHp, List<Trait> traits)
+  public Monster(string name, int maxHp)
   {
     Name = name;
     MaxHp = maxHp;
     CurrentHP = maxHp;
-
-    Traits = [.. traits];
   }
 
   public void TakeDamage(int amount)
