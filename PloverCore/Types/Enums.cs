@@ -6,14 +6,25 @@ public enum TraitCategory
   Energy = 1
 }
 
-public enum Attribute
+public enum Stat
 {
   Strength = 0,
-  Dexteriry = 1,
-  Constitution = 2,
-  Intelligence = 3,
-  Wisdom = 4,
-  Charisma = 5,
+  Dexterity = 1,
+  Intelligence = 2,
+  Will = 3,
+}
+public enum Skills
+{
+  Arcana = 0,
+  Examination = 1,
+  Finesse = 2,
+  Influence = 3,
+  Insight = 4,
+  Might = 5,
+  Lore = 6,
+  Naturecraft = 7,
+  Perception = 8,
+  Stealth = 9
 }
 
 public enum ModifierType

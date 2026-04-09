@@ -1,19 +1,16 @@
-﻿using PloverCore.Enums;
-using PloverCore.Types;
+﻿using PloverCore.Types;
 
-namespace PloverCore;
+namespace PloverCore.Classes;
 
 public class Character
 {
   public string Name = "Placeholder";
 
-  public Dictionary<Types.Attribute, int> Attributes = new(){
-    {Types.Attribute.Strength, 10},
-    {Types.Attribute.Dexteriry, 10},
-    {Types.Attribute.Constitution, 10},
-    {Types.Attribute.Intelligence, 10},
-    {Types.Attribute.Wisdom, 10},
-    {Types.Attribute.Charisma, 10},
+  public Dictionary<Stat, int> Attributes = new(){
+    {Stat.Strength, 1},
+    {Stat.Dexterity, 1},
+    {Stat.Intelligence, 1},
+    {Stat.Will, 1},
   };
 
   public List<Trait> Traits = [

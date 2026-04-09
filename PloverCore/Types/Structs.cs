@@ -1,6 +1,4 @@
-using PloverCore.Types;
-
-namespace PloverCore.Enums;
+namespace PloverCore.Types;
 
 public struct Modifier
 {
@@ -20,6 +18,6 @@ public struct Condition
 {
   public string Name;
   public string Description;
-  public Types.Attribute Modifies;
+  public Stat Modifies;
   public Modifier Modifier;
 }
