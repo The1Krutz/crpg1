@@ -21,3 +21,17 @@ public struct Condition
   public Stat Modifies;
   public Modifier Modifier;
 }
+
+public struct Attack
+{
+  public string Name;
+  public int Range;
+  public Roll Damage;
+}
+
+public struct Roll
+{
+  public int DieCount;
+  public DieType DieType;
+  public int Modifier;
+}

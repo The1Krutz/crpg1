@@ -24,11 +24,11 @@ jobs:
       - name: Run linter
         run: dotnet format --verify-no-changes
 
-  # test:
-  #   name: Test
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v6
-  #     - name: Run unit tests
-  #       run: dotnet test
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Run unit tests
+        run: dotnet test

@@ -13,6 +13,7 @@ public enum Stat
   Intelligence = 2,
   Will = 3,
 }
+
 public enum Skills
 {
   Arcana = 0,
@@ -42,4 +43,34 @@ public enum ModifierType
   /// ie: Blinded sets VisionDistance to 0 no matter what it was before.
   /// </summary>
   Absolute = 2,
+}
+
+public enum ArmorType
+{
+  Unarmored = 0,
+  Medium = 1,
+  Heavy = 2,
+}
+
+public enum DamageType
+{
+  Slashing = 0,
+  Bludgeoning = 1,
+  Piercing = 2,
+  Fire = 3,
+  Ice = 4,
+  Lightning = 5,
+  Necrotic = 6,
+  Radiant = 7,
+}
+
+public enum DieType
+{
+  d4 = 0,
+  d6 = 1,
+  d8 = 2,
+  d10 = 3,
+  d12 = 4,
+  d20 = 5,
+  d100 = 6,
 }

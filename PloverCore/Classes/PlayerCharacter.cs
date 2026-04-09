@@ -2,7 +2,7 @@
 
 namespace PloverCore.Classes;
 
-public class Character
+public class PlayerCharacter
 {
   public string Name = "Placeholder";
 
@@ -20,7 +20,7 @@ public class Character
   public int MaxHp;
   public int CurrentHP;
 
-  public Character(string name, int maxHp, List<Trait> traits)
+  public PlayerCharacter(string name, int maxHp, List<Trait> traits)
   {
     Name = name;
     MaxHp = maxHp;
