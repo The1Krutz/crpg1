@@ -22,9 +22,6 @@ public class Character
   public int MaxHp;
   public int CurrentHP;
 
-  /// <summary>
-  /// Default constructor
-  /// </summary>
   public Character(string name, int maxHp, List<Trait> traits)
   {
     Name = name;
