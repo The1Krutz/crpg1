@@ -1,4 +1,4 @@
-﻿namespace PloverCore.Traits;
+﻿namespace PloverCore.Enums;
 
 public struct Trait
 {

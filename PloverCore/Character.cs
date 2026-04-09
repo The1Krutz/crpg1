@@ -1,10 +1,19 @@
-﻿using PloverCore.Traits;
+﻿using PloverCore.Enums;
 
 namespace PloverCore;
 
 public class Character
 {
   public string Name = "Placeholder";
+
+  public Dictionary<Enums.Attribute, int> Attributes = new(){
+    {Enums.Attribute.Strength, 10},
+    {Enums.Attribute.Dexteriry, 10},
+    {Enums.Attribute.Constitution, 10},
+    {Enums.Attribute.Intelligence, 10},
+    {Enums.Attribute.Wisdom, 10},
+    {Enums.Attribute.Charisma, 10},
+  };
 
   public List<Trait> Traits = [
     AllTraits.Humanoid
@@ -16,9 +25,6 @@ public class Character
   /// <summary>
   /// Default constructor
   /// </summary>
-  /// <param name="name"></param>
-  /// <param name="maxHp"></param>
-  /// <param name="traits"></param>
   public Character(string name, int maxHp, List<Trait> traits)
   {
     Name = name;

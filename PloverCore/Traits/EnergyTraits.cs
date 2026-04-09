@@ -1,4 +1,4 @@
-using PloverCore.Traits;
+using PloverCore.Enums;
 
 namespace PloverCore;
 
