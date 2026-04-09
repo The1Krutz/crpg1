@@ -1,10 +1,17 @@
-﻿using PloverCore.Traits;
+﻿using PloverCore.Types;
 
-namespace PloverCore;
+namespace PloverCore.Classes;
 
-public class Character
+public class PlayerCharacter
 {
   public string Name = "Placeholder";
+
+  public Dictionary<Stat, int> Attributes = new(){
+    {Stat.Strength, 1},
+    {Stat.Dexterity, 1},
+    {Stat.Intelligence, 1},
+    {Stat.Will, 1},
+  };
 
   public List<Trait> Traits = [
     AllTraits.Humanoid
@@ -13,8 +20,7 @@ public class Character
   public int MaxHp;
   public int CurrentHP;
 
-  // Default constructor
-  public Character(string name, int maxHp, List<Trait> traits)
+  public PlayerCharacter(string name, int maxHp, List<Trait> traits)
   {
     Name = name;
     MaxHp = maxHp;

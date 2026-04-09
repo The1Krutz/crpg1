@@ -1,15 +1,41 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "dotrush.task",
-			"project": "${command:dotrush.activeProjectPath}",
-			"problemMatcher": [],
-			"label": "dotrush: Build",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/PloverCore.Test/PloverCore.Test.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary;ForceNoAlign"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publish",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "${workspaceFolder}/PloverCore.Test/PloverCore.Test.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary;ForceNoAlign"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "watch",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "--project",
+        "${workspaceFolder}/PloverCore.Test/PloverCore.Test.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
 }
